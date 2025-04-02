@@ -1,0 +1,8 @@
+.list {
+  background-color: green;
+  padding-left: 150px;
+
+  .remove-item {
+    display: flex;
+  }
+}
