@@ -35,3 +35,10 @@
 body {
   background-color: var(--bg-color-primary);
 }
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
