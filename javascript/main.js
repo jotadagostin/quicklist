@@ -4,15 +4,18 @@ const itemsContainer = document.querySelector(".items");
 const removeMessage = document.querySelector(".remove-item");
 const checkboxes = document.querySelectorAll('input[type="checkbox"]');
 
-// to mark and remove the checkbox:
-checkboxes.forEach((cb) => {
-  cb.addEventListener("change", () => {
-    if (cb.checked) {
-      checkboxes.forEach((other) => {
-        if (other !== cb) other.checked = false;
+itemsContainer.addEventListener("change", (event) => {
+  if (event.target.type === "checkbox") {
+    const clickedCheckbox = event.target;
+    if (clickedCheckbox.checked) {
+      const allCheckboxes = itemsContainer.querySelectorAll(
+        'input[type="checkbox"]'
+      );
+      allCheckboxes.forEach((cb) => {
+        if (cb !== clickedCheckbox) cb.checked = false;
       });
     }
-  });
+  }
 });
 
 // function to add a item:
