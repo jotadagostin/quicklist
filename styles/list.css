@@ -1,52 +1,59 @@
 .list {
   margin-top: 40px;
 
-  .item {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 12px;
-    align-items: center;
-    gap: 8px;
-    width: 660px;
-    height: 33px;
-    padding: 10px;
-    border: 1px solid var(--color-border-primary);
-    border-radius: 10px;
-    background-color: var(--bg-color-secundary);
+  .items {
+    .item {
+      background-color: #ffc0cb;
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 12px;
+      align-items: center;
+      gap: 8px;
+      width: 660px;
+      height: 33px;
+      padding: 10px;
+      border: 1px solid var(--color-border-primary);
+      border-radius: 10px;
+      background-color: var(--bg-color-secundary);
 
-    img {
-      position: relative;
-      left: 520px;
+      img {
+        cursor: pointer;
+      }
+    }
+
+    .item label {
+      flex: 1;
     }
 
     input[type="checkbox"] {
-      display: none;
+      all: unset;
+      position: relative;
+
+      --size: 1rem;
+      height: 16px;
+      width: 16px;
+
+      border: 1px solid var(--color-border-primary);
+      background-color: var(--color-background-secondary);
+      border-radius: 0.375rem;
+      &:hover {
+        border-color: var(--color-border-primary-hover);
+      }
+      &:checked {
+        background-color: var(--color-brand);
+        border-color: var(--color-brand);
+        &:after {
+          content: "";
+          position: absolute;
+          inset: 0;
+          background: url(../assets/icons/checkmark.svg) left center/contain
+            no-repeat;
+        }
+      }
     }
 
     label {
-      position: relative;
-      padding-left: 30px;
-      cursor: pointer;
       font: var(--label);
-      color: var(--color-content-secondary);
-    }
-
-    label::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 20px;
-      height: 20px;
-      background: #ddd;
-      border-radius: 50%; /* Torna arredondado */
-      transition: 0.3s;
-    }
-
-    input[type="checkbox"]:checked + label::before {
-      background: var(--color-brand);
-      box-shadow: inset 0 0 0 4px white;
     }
   }
 
