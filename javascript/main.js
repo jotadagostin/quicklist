@@ -4,6 +4,7 @@ const itemsContainer = document.querySelector(".items");
 const removeMessage = document.querySelector(".remove-item");
 const checkboxes = document.querySelectorAll('input[type="checkbox"]');
 
+// setting just one item in the checkbox list:
 itemsContainer.addEventListener("change", (event) => {
   if (event.target.type === "checkbox") {
     const clickedCheckbox = event.target;
