@@ -58,7 +58,8 @@
   }
 
   .remove-item {
-    display: flex;
+    display: none;
+
     flex-direction: row;
     align-items: center;
     padding: 10px;
@@ -70,10 +71,9 @@
     gap: 8px;
     font: var(--label);
     color: var(--bg-color-secundary);
+  }
 
-    .delete-small {
-      position: relative;
-      left: 355px;
-    }
+  .delete-small {
+    margin-left: auto;
   }
 }
