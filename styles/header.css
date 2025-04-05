@@ -10,3 +10,15 @@ header {
     height: 40px;
   }
 }
+
+/* mobile version */
+
+@media screen and (max-width: 390px) {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 30px;
+    width: 390px;
+  }
+}
