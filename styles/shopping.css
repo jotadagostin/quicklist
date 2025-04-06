@@ -62,7 +62,6 @@
 @media screen and (max-width: 390px) {
   .shopping {
     width: 380px;
-    background-color: pink;
     display: flex;
     flex-direction: column;
 
