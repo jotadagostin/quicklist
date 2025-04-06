@@ -61,19 +61,17 @@
 
 @media screen and (max-width: 390px) {
   .shopping {
-    width: 380px;
+    width: 326px;
     display: flex;
     flex-direction: column;
 
     .shopping-title {
-      padding-left: 10px;
     }
 
     .shopping-item {
-      width: 390px;
+      width: 326px;
       display: flex;
       flex-direction: column;
-      padding-left: 10px;
     }
 
     .shopping-item input {
