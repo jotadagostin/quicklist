@@ -95,7 +95,7 @@
     }
 
     .remove-item {
-      display: flex;
+      display: none;
       width: 290px;
     }
   }
