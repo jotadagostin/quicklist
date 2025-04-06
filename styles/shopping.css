@@ -61,19 +61,20 @@
 
 @media screen and (max-width: 390px) {
   .shopping {
-    width: 100%;
+    width: 380px;
+    background-color: pink;
     display: flex;
     flex-direction: column;
 
     .shopping-title {
-      padding-left: 30px;
+      padding-left: 10px;
     }
 
     .shopping-item {
       width: 390px;
       display: flex;
       flex-direction: column;
-      padding-left: 30px;
+      padding-left: 10px;
     }
 
     .shopping-item input {

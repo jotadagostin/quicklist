@@ -82,13 +82,20 @@
 
 @media screen and (max-width: 390px) {
   .list {
+    background-color: green;
+    margin-left: -50px;
     .items {
       width: 390px;
-      padding-left: 60px;
+
       .item {
         width: 300px;
         padding: 5px;
       }
+    }
+
+    .remove-item {
+      display: flex;
+      width: 290px;
     }
   }
 }
