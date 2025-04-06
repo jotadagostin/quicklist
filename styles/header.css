@@ -17,7 +17,7 @@ header {
   header {
     display: flex;
     align-items: center;
-    justify-content: start;
-    width: 326px;
+    justify-content: center;
+    width: 390px;
   }
 }
