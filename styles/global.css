@@ -46,7 +46,8 @@ main {
 
 @media screen and (max-width: 390px) {
   body {
-    overflow: hidden;
+    overflow-x: hidden; /* esconde o scroll horizontal */
+    overflow-y: auto; /* libera o scroll vertical se precisar */
   }
   main {
     display: flex;

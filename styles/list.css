@@ -97,6 +97,7 @@
     .remove-item {
       display: none;
       width: 290px;
+      text-align: center;
     }
   }
 }
